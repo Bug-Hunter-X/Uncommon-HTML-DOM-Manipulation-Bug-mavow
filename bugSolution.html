@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    //Safe access using optional chaining
+    let element = document.getElementById("myDiv")?.querySelector("p");
+    element?.style.color = "red"; 
+  </script>
+</body>
+</html>
